@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CE57F13F2C0A6AA90031B5BB /* EmojiDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F13E2C0A6AA90031B5BB /* EmojiDemo.swift */; };
+		CE57F1412C0A7CA70031B5BB /* ListDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F1402C0A7CA70031B5BB /* ListDemo.swift */; };
+		CE57F1442C0A84940031B5BB /* Emoji.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F1432C0A84940031B5BB /* Emoji.Model.swift */; };
+		CE57F1462C0A87100031B5BB /* List.Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F1452C0A87100031B5BB /* List.Model.swift */; };
+		CE57F14A2C0A9C8E0031B5BB /* ListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F1492C0A9C8E0031B5BB /* ListDetailView.swift */; };
+		CE57F14C2C0A9D790031B5BB /* ListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE57F14B2C0A9D790031B5BB /* ListItemView.swift */; };
 		CEB029562C04FF30003E171E /* MyFisrtAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB029552C04FF30003E171E /* MyFisrtAppApp.swift */; };
 		CEB029582C04FF30003E171E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB029572C04FF30003E171E /* ContentView.swift */; };
 		CEB0295A2C04FF46003E171E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CEB029592C04FF46003E171E /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CE57F13E2C0A6AA90031B5BB /* EmojiDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiDemo.swift; sourceTree = "<group>"; };
+		CE57F1402C0A7CA70031B5BB /* ListDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDemo.swift; sourceTree = "<group>"; };
+		CE57F1432C0A84940031B5BB /* Emoji.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.Model.swift; sourceTree = "<group>"; };
+		CE57F1452C0A87100031B5BB /* List.Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.Model.swift; sourceTree = "<group>"; };
+		CE57F1492C0A9C8E0031B5BB /* ListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListDetailView.swift; sourceTree = "<group>"; };
+		CE57F14B2C0A9D790031B5BB /* ListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListItemView.swift; sourceTree = "<group>"; };
 		CEB029522C04FF30003E171E /* MyFisrtApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFisrtApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEB029552C04FF30003E171E /* MyFisrtAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFisrtAppApp.swift; sourceTree = "<group>"; };
 		CEB029572C04FF30003E171E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CE57F13D2C0A6A470031B5BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CE57F13E2C0A6AA90031B5BB /* EmojiDemo.swift */,
+				CE57F1482C0A9C090031B5BB /* ListViews */,
+				CE57F1472C0A9BE70031B5BB /* Shared */,
+				CEB029572C04FF30003E171E /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CE57F1422C0A84630031B5BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CE57F1432C0A84940031B5BB /* Emoji.Model.swift */,
+				CE57F1452C0A87100031B5BB /* List.Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CE57F1472C0A9BE70031B5BB /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		CE57F1482C0A9C090031B5BB /* ListViews */ = {
+			isa = PBXGroup;
+			children = (
+				CE57F1402C0A7CA70031B5BB /* ListDemo.swift */,
+				CE57F1492C0A9C8E0031B5BB /* ListDetailView.swift */,
+				CE57F14B2C0A9D790031B5BB /* ListItemView.swift */,
+			);
+			path = ListViews;
+			sourceTree = "<group>";
+		};
 		CEB029492C04FF30003E171E = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +100,9 @@
 		CEB029542C04FF30003E171E /* MyFisrtApp */ = {
 			isa = PBXGroup;
 			children = (
+				CE57F1422C0A84630031B5BB /* Models */,
+				CE57F13D2C0A6A470031B5BB /* Views */,
 				CEB029552C04FF30003E171E /* MyFisrtAppApp.swift */,
-				CEB029572C04FF30003E171E /* ContentView.swift */,
 				CEB029592C04FF46003E171E /* Assets.xcassets */,
 				CEB0295B2C04FF46003E171E /* Preview Content */,
 			);
@@ -137,8 +187,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE57F13F2C0A6AA90031B5BB /* EmojiDemo.swift in Sources */,
+				CE57F1442C0A84940031B5BB /* Emoji.Model.swift in Sources */,
 				CEB029582C04FF30003E171E /* ContentView.swift in Sources */,
+				CE57F14C2C0A9D790031B5BB /* ListItemView.swift in Sources */,
+				CE57F1412C0A7CA70031B5BB /* ListDemo.swift in Sources */,
+				CE57F1462C0A87100031B5BB /* List.Model.swift in Sources */,
 				CEB029562C04FF30003E171E /* MyFisrtAppApp.swift in Sources */,
+				CE57F14A2C0A9C8E0031B5BB /* ListDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
